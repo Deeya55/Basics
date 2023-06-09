@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(245, 242, 250);
+        }
+        h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(56, 18, 0);
+
+}
+        ul li{
+list-style: none;
+display: inline-block;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 20px;
+padding-right: 20px;
+position: relative;
+}
+ul li a{
+color: rgb(118, 44, 24);
+text-decoration: none;
+text-transform: uppercase;
+}
+ul li::after{
+content: '';
+height: 3px;
+width: 0;
+background: #dd5334;
+display: block;
+margin: auto;
+
+}
+ul li:hover::after{
+width: 100%;
+transition: 0.5s;
+}
+p{
+    padding: 30px;
+    text-align: center;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(131, 45, 6); 
+    }
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    color: rgb(56, 18, 0);
+    text-align: center;
+  }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contacts.html">Contact Us</a></li>
+        </ul>
+      </header>
+    <h1>Get connected with us!</h1>
+    <p>The Hideout Café offers membership registration to its coustomers. The membership allows our costomurs to 
+        enjoy offers and discounts as well as free delivery services.
+        <br>Contact Us Through The Given Details For More Information</br>
+        <br>Phone Number: 01-1234567</br>
+        <br>Email Address: thehideout@gmail.com</br>
+    </p>
+    <div class="footer">
+        The Hideout Café||&copy;2023|All rights reserved.
+      </div>
+</body>
+</html>
